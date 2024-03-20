@@ -1,0 +1,44 @@
+Common Style Decisions for Website
+
+color scheme:
+light blue: #7C9EB2
+light purple: #EDDFEF
+purple: #52528C
+medium purple: #372554
+Dark purple: #231123
+black: #000000
+
+
+background color/image: 
+background img: stars.jpg
+bacground color
+
+font style: 
+moonFlower.ttf
+wonderBar.otf
+
+text color:
+light purple: #EDDFEF
+light blue: #7C9EB2
+
+link style: 
+medium purple: #372554
+light blue: #7C9EB2
+
+link style on hover:
+background color: #7C9EB2
+text color: #231123
+
+h1-h6 style:
+
+
+margins:
+ Header background
+    margin-left: -50px
+    margin-right: -50px
+    margin-bottom: 24px
+ Header
+    auto
+
+padding:
+top padding: 40px

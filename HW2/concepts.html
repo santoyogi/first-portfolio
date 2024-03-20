@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>CSS Concepts</title>
+
+    <meta name="description" content="A page demonstrating CSS Concepts">
+    <meta name="keywords" content="CSS, CSS Box Model, hover, text, 
+     background, color contrast">
+    <meta name="author" content="Gissel Santoyo">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="resources/style.css" />
+    <link rel="icon" type="image/icon" href="images/favicon.png" />
+
+</head>
+
+<body>
+<header>
+    <p>CSS Concepts</p>
+</header>
+<nav>
+    <ul>
+        <li><a href="index.html" 
+        title="Go to Main Portfolio Page"> Home </a></li>
+        <li><a href="tutorial.html" 
+        title="Go to tutorial page for uploading a website"> Tutorial</a></li>
+        <li><a href="concepts.html"
+        title="Go to CSS Concepts page"> CSS Concepts</a></li>
+        <li>
+            <div class="dropdown">
+                <button>See more</button>
+                <div class="dropdown-content">
+                    <a href="HW1.html"
+                    title="Go to Pokemon guide page"> Pokemon
+                    </a>
+                    <a href="JS_story.html"
+                    title="Go to madlib page"> Madlib
+                    </a>
+                    <a href="slideShow.html"
+                    title="Go to slideShow page"> Crystallary
+                    </a>
+                    <a href="form.html"
+                    title="Go to slideShow page"> Friend Form
+                    </a>
+                </div>
+            </div>
+        </li>
+    </ul>
+</nav>
+
+<main>
+<h1>CSS Concepts</h1>
+
+<p>This webpage is a brief guide to the following concepts.</p>
+<ul>
+    <li>The CSS Box Model</li>
+    <li>Changing Style on Hover</li>
+    <li>Color Contrast Between Text and Background</li>
+    <li>Position</li>
+    <li>Shadow</li>
+</ul>
+
+<h2>The CSS Box Model</h2>
+
+<img src="resources/box_model_opt.png"
+     alt="A diagram of the CSS box model" width="400" height="318" />
+
+<p>The CSS box Model has four parts that can all be modified: the content, padding, border and margin. The content holds text or image while the padding is the area around the content. Then the border is simply the border that goes around the content as well as the padding. Finally, Margin is the area that is cleared around the border.</p>
+
+<h3>Padding</h3>
+
+<div class="padding1">
+    <p>The padding in here is all uniform. The padding on all sides are the same size of 30px. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+<p></p>
+
+<div class="padding2">
+    <p>The padding in here has one size on the top and bottom and one size on the right and left. Top and bottom are 80px while right and left are 45px. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+</div>
+<p></p>
+
+<div class="padding3">
+    <p>The padding in here is different on all sides. The top is 100px, right is 30px, bottom is 55px and left is 75px. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+</div>
+<p></p>
+
+<h3>Margins</h3>
+
+<div class="margin1">
+    <p>In this margin example, the left margin is set at it's default value. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+</div>
+<p></p>
+
+<div class="margin2">
+    <p>In this margin example, the left margin is set to 50px. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+</div>
+<p></p>
+
+<div class="margin3">
+    <p>In this margin example, the left margin is set to 150px. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'</p>
+</div>
+<p></p>
+
+<h2>Changing Style on Hover</h2>
+
+<p>Hover selects elements when you move your mouse over it. Examples are shown below. Hover your mouse over the boxes to see the effects of Hover.</p>
+
+<div class="hover1">
+    <p>This example shows no hover</p>
+</div>
+<p></p>
+
+<div class="hover2">
+    <p>This example shows a background color change when you hover over. This transition lasts 4 seconds.</p>
+</div>
+<p></p>
+
+<div class="hover3">
+    <p>This example shows a change in the height when you hover. This transition lasts 2 seconds.</p>
+</div>
+<p></p>
+
+<h2 class="contrast">Color Contrast</h2>
+
+<p class="contrast">Color contrast is important to user accessibility. The table below showcases a few background and text color contrast examples followed by their ratings.</p>
+
+<table>
+    <tr>
+        <th>text</th>
+        <th>background color</th>
+        <th>text color</th>
+        <th>contrast ratio</th>
+        <th>rating</th>
+    </tr>
+    <tr>
+        <td class="cell1"> Lorem ipsum</td>
+        <td>#EADB0B</td>
+        <td>#991F00</td>
+        <td>5.73:1</td>
+        <td>AA</td>
+    </tr>
+    <tr>
+        <td class="cell2">Lorem ipsum</td>
+        <td>#BC9BE4</td>
+        <td>#724ED4</td>
+        <td>2.38:1</td>
+        <td>None</td>
+    </tr>
+    <tr>
+        <td class="cell3">Lorem ipsum</td>
+        <td>#FC7F2C</td>
+        <td>#006ADB</td>
+        <td>2.01:1</td>
+        <td>None</td>
+    </tr>
+    <tr>
+        <td class="cell4">Lorem Ipsum</td>
+        <td>#F1D0F1</td>
+        <td>#07401B</td>
+        <td>8.54:1</td>
+        <td>AA, AAA</td>
+    </tr>
+    <tr>
+        <td class="cell5">Lorem Ipsum</td>
+        <td>#FFEDAD</td>
+        <td>#2C683D</td>
+        <td>5.69:1</td>
+        <td>AA</td>
+    </tr>
+</table>
+
+<h2>Positioning</h2>
+    <p>Positioning has to do with the type of method used to position an element. Below are 3 positioning examples.</p>
+
+<h3>Relative Position</h3>
+<p>Using relative positioning will move the element relative to its regular position, leaving a gap where it once was.</p>
+ <p class="position1">Using relative positioning to move this text from the left 100px and from the top 15px</p>
+
+ <section class="absolute1">
+     <h3>Absolute Position</h3>
+     <p>Using absolute positioning will move the element relative to the document body since it is embedded in the body section of the html file. However the position can be relative to whatever you associate the element to. In this case, it is relative to this section of absolute postioning.</p>
+     <p class="position2">This is an element with absolute positioning. Relative to this section it is positioned 100px from the top and 100 px from the left</p>
+ </section>
+
+<br />
+<br />
+<br />
+<br />
+
+<h3>Fixed Position</h3>
+     <p>Fixed positioning will postion an element relative to the viewport. This means that it will stay in the same place even when you scroll up or down. The element is red and in the top right corner of the screen.</p>
+     <p class="position3">This Element is fixed to this spot.</p>
+
+<h2>Shadow</h2>
+<p>This property will add shadow to an element.</p>
+
+<h3>Horizontal Property</h3>
+     <p>When using shadow you must specify where you want the shadow relative to the element. Setting the horizontal value will determine how much the shadow will shift horizontally accross the x-axis of the screen.</p>
+     <p class="shadow1">Notice the small horizontal shift in the shadow?</p>
+     <p class="shadow2">Notice the large horizontal shift in the shadow?</p>
+
+<h3>Vertical Property</h3>
+     <p>Like the horizontal property, the vertical property will determine how much the shadow will move vertically, relative to the element.</p>
+     <p class="shadow3">Notice the small vertical shift in the shadow?</p>
+     <p class="shadow4">Notice the large vertical shift in the shadow?</p>
+
+<h3>Blur Property</h3>
+     <p>This property will blur the shadow of the element.</p>
+     <p class="blur1">Notice the small blur on the shadow?</p>
+     <p class="blur2">Notice the large blur on the shadow?</p>
+</main>
+
+<footer class="col-12">
+<h2>Contact Information</h2>
+<a href="tel:8016867876"
+   title="Call Gissel's phone">
+<img src="resources/phone_opt.png"
+         alt="Phone Icon"
+         height="50" width="50">
+</a>
+<a href="mailto:gisselsantoyo@mail.weber.edu"
+   title="Send Gissel an E-mail">
+    <img src="resources/email_opt.png"
+         alt="email icon"
+         height="50" width="50">
+</a>
+<a href="https://www.instagram.com/gissel_santoyo/"
+   title="Go to Gissel's instagram'">
+    <img src="resources/instagram_opt.png"
+         alt="instagram icon"
+         height="50" width="50">
+</a>
+    <h5>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from 
+    <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></h5>
+</footer>
+</body>
+</html>

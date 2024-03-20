@@ -1,0 +1,136 @@
+﻿<!doctype html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>Tutorial</title>
+
+    <meta name="description" content="A tutorial for how to publish a website">
+    <meta name="keywords" content="website publishing, icarus, webpage upload">
+    <meta name="author" content="Gissel Santoyo">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/icon" href="images/favicon.png" />
+
+    <link rel="stylesheet" href="resources/style.css" />
+
+</head>
+
+<body>
+<header>
+    <p>Tutorial</p>
+</header>
+<nav>
+    <ul>
+        <li><a href="index.html" 
+        title="Go to Main Portfolio Page"> Home </a></li>
+        <li><a href="tutorial.html" 
+        title="Go to tutorial page for uploading a website"> Tutorial</a></li>
+        <li><a href="concepts.html"
+        title="Go to CSS Concepts page"> CSS Concepts</a></li>
+        <li>
+            <div class="dropdown">
+                <button>See more</button>
+                <div class="dropdown-content">
+                    <a href="HW1.html"
+                    title="Go to Pokemon guide page"> Pokemon
+                    </a>
+                    <a href="JS_story.html"
+                    title="Go to madlib page"> Madlib
+                    </a>
+                    <a href="slideShow.html"
+                    title="Go to slideShow page"> Crystallary
+                    </a>
+                    <a href="form.html"
+                    title="Go to slideShow page"> Friend Form
+                    </a>
+                </div>
+            </div>
+        </li>
+    </ul>
+</nav>
+
+<main>
+    <h1>How to Publish a Web Page On Icarus</h1>
+
+    <h2>Introduction</h2>
+    <p>Icarus is a Weber State University server that is accessible through a number of steps. This tutorial will explain how to connect to the server and upload the necessary files. </p>
+
+    <h3>FTP: Cyberduck</h3>
+    <p>In order to upload files to the Icarus server, you will need to establish a SSH connection using a program like PuTTY. Once connected you will also need to download a FTP tool. In this tutorial we will be using Cyberduck.</p>
+
+    <h3>Oppening a Connection</h3>
+    <p>When first opening the Cyberduck software a window should appear and the first thing you are going to want to click is "Open Connection"."</p>
+    <img class="tutImg" alt="Cyberduck opening window"
+    src="images/CyberduckSS_01.png"
+    width="440" height="373" />
+
+    <h3>Connection Information</h3>
+    <p>Once that is clicked, another window will pop up. This is where you will input your information like the server name, your username, password, etc.</p>
+    <img class="tutImg" alt="Open Connection window prompt"
+    src="images/CyberduckSS_02.png"
+    width="555" height="448" />
+    
+    <p>Make sure to switch to a SFTP type protocol and a Port of 22. The server name is: icarus.cs.weber.edu or 137.190.19.20. Your Username will be your initials and the last five digits of your W number. The password will be your first name (capitalized) and "cs!" at the end</p>
+    <h4>Example</h4>
+    <p>Name: Billy Bob</p> 
+    <p>W#: W01234567</p>
+    <p>Username: bb34567</p>
+    <p>Password: Billycs!</p>
+
+    <h3>Uploading Files</h3>
+    <p>Once connected you are able to upload a file, or multiple files into the Icarus public.html folder by looking for the "Upload" button on the top bar. Or you can simply drag and drop a file.</p>
+    <img class="tutImg" alt="Button for file Upload"
+    src="images/CyberduckSS_03.png"
+    width="762" height="447" />
+
+    <h3>Composing a URL</h3>
+    <p>In order to access the website you uploaded you will need to know how to write the URL. Here are three different examples for three different paths.</p>
+    
+    <p>1. Directly in public_html Folder</p>
+    <p>Example URL:</p>
+    <p>icarus.cs.weber.edu/~gs36432/public_html</p>
+    <img class="tutImg" alt="Button for file Upload"
+    src="images/URL_Examp_01.png"
+    width="544" height="399" />
+
+    <p>2. Secondary folder</p>
+    <p>Example URL:</p>
+    <p>icarus.cs.weber.edu/~gs36432/public_html/la2/distractions.html</p>
+    <img class="tutImg" alt="Button for file Upload"
+    src="images/URL_Examp_03.png"
+    width="544" height="332" />
+
+    <p>3. No file name in URL</p>
+    <p>Example URL:</p>
+    <p>icarus.cs.weber.edu/~gs36432</p>
+    <img class="tutImg" alt="Button for file Upload"
+    src="images/URL_Examp_02.png"
+    width="495" height="327" />
+</main>
+<footer class="col-12">
+<h2>Contact Information</h2>
+<a href="tel:8016867876"
+   title="Call Gissel's phone">
+<img src="resources/phone_opt.png"
+         alt="Phone Icon"
+         height="50" width="50">
+</a>
+<a href="mailto:gisselsantoyo@mail.weber.edu"
+   title="Send Gissel an E-mail">
+    <img src="resources/email_opt.png"
+         alt="email icon"
+         height="50" width="50">
+</a>
+<a href="https://www.instagram.com/gissel_santoyo/"
+   title="Go to Gissel's instagram'">
+    <img src="resources/instagram_opt.png"
+         alt="instagram icon"
+         height="50" width="50">
+</a>
+    <h5>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from 
+    <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></h5>
+</footer>
+</body>
+</html>
+
